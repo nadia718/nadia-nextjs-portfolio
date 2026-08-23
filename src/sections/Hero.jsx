@@ -1,53 +1,40 @@
 // "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Counter from "@/components/Counter";
 import SocialLinks from "@/components/SocialLinks";
-import { ArrowLeft, ArrowRight, Download } from "lucide-react";
+import { Download } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#D09A3B] via-emerald-500 to-[#000000] text-white">
+    <section className="relative overflow-hidden bg-[#090909] text-white">
+      <div className="pointer-events-none absolute left-[25%] top-[5%] h-[600px] w-[700px] rounded-full bg-[#C89A5B]/20 blur-[180px] md:left-[30%] md:h-[500px] md:w-[550px] max-sm:left-1/2 max-sm:top-[5%] max-sm:h-[400px] max-sm:w-[400px] max-sm:-translate-x-1/2 max-sm:blur-[120px]" />
 
-      {/* VERY SUBTLE BACKGROUND LIGHT */}
-      <div className="pointer-events-none absolute left-[35%] top-[18%] h-[500px] w-[900px] rounded-full bg-gradient-to-r from-[#D09A3B] to-[#000000] blur-[200px] max-md:left-1/2 max-md:top-[12%] max-md:h-[400px] max-md:w-[400px] max-md:-translate-x-1/2 max-md:blur-[130px]" />
+      <div className="relative mx-auto flex min-h-[680px] max-w-[1280px] flex-col px-5 py-14 font-[var(--font-manrope)] sm:px-8 md:px-10 lg:min-h-[680px] lg:flex-row lg:items-center lg:py-0">
 
-      {/* HERO CONTENT */}
-      <div className="relative mx-auto flex min-h-[680px] max-w-[1280px] items-center px-6 font-[var(--font-manrope)] max-md:flex-col max-md:px-5 max-md:pt-24 lg:px-10">
         {/* LEFT CONTENT */}
-        <div className="relative z-20 w-full pb-12 lg:w-[36%] max-md:flex max-md:w-full max-md:flex-col max-md:items-center max-md:pb-0 max-md:text-center">
-
-          {/* Small Intro */}
-          <div className="mb-4 flex items-center gap-2 max-md:justify-center">
+        <div className="relative z-20 order-1 w-full text-center lg:w-[36%] lg:text-left">
+          <div className="mb-4 flex items-center justify-center gap-2 lg:justify-start">
             <span className="h-[1px] w-7 bg-[#C89A5B]" />
-
-            <p className="text-[16px] font-semibold tracking-[0.08em] text-[#C89A5B]">
+            <p className="text-[14px] font-semibold tracking-[0.08em] text-[#C89A5B] sm:text-[15px]">
               HI, I'M
             </p>
           </div>
 
-          {/* MAIN HEADING */}
-          <h1 className="w-full font-[var(--font-unbounded)] text-[30px] font-extrabold uppercase leading-[1.3] tracking-[-0.045em] text-[#F5F3EE] lg:text-[37px] ">            <span className="block whitespace-nowrap">
-            Nadia Nisar
-          </span>
-
-            <span className="mt-1 block whitespace-nowrap text-[#C89A5B]">
+          <h1 className="font-[var(--font-unbounded)] text-[28px] font-extrabold uppercase leading-[1.2] tracking-[-0.045em] text-[#F5F3EE] sm:text-[34px] lg:text-[37px]">
+            <span className="block">Nadia Nisar</span>
+            <span className="mt-2 block text-[#C89A5B]">
               Frontend Developer
             </span>
           </h1>
 
-          {/* DESCRIPTION */}
-          <p className="mt-6 max-w-[400px]  text-[18px] leading-7 text-[#AFAAA3] max-md:max-w-[350px] max-md:px-2 max-md:pr-0 max-md:text-[16px] max-md:leading-6">
-            I build modern, responsive websites that help businesses
-            and brands grow online.
+          <p className="mx-auto mt-5 max-w-[400px] text-[15px] leading-6 text-[#AFAAA3] sm:mt-6 sm:text-[17px] sm:leading-7 lg:mx-0">
+            I build modern, responsive websites that help businesses and brands
+            grow online.
           </p>
 
-          {/* BUTTONS */}
-          <div className="mt-8  flex items-center gap-4 max-md:justify-center">
-
-            {/* Hire Button */}
+          <div className="mt-7 flex justify-center lg:justify-start">
             <Button
               href="#contact"
               icon={
@@ -70,186 +57,105 @@ export default function Hero() {
             >
               Hire Me Now
             </Button>
-
           </div>
 
-          {/* PROFESSIONAL STATS */}
-          <div className="mt-10 flex items-left justify-left gap-3 font-semibold max-md:mt-10 max-md:w-full max-md:justify-center max-md:gap-2">
-
-            {/* Stat 1 */}
-            <div className="min-w-[100px] max-md:min-w-0 max-md:w-[30%]">
-              <h3 className="font-[var(--font-unbounded)] text-center text-[50px] font-bold text-[#F5F3EE] max-md:text-[34px]">
+          {/* STATS */}
+          <div className="mt-9 flex justify-center gap-2 sm:gap-5 lg:justify-start">
+            <div className="min-w-0 flex-1 sm:min-w-[100px] sm:flex-none">
+              <h3 className="font-[var(--font-unbounded)] text-[28px] font-bold text-[#F5F3EE] sm:text-[42px] lg:text-[48px]">
                 <Counter end={4} suffix="+" />
               </h3>
-
-              <p className="mt-1 text-center text-[12px] uppercase text-[#8F8A84] max-md:text-[9px] max-md:leading-4">
+              <p className="mt-1 text-[7px] uppercase text-[#8F8A84] sm:text-[10px] lg:text-[11px]">
                 Years Experience
               </p>
             </div>
 
-            {/* Stat 2 */}
-            <div className="min-w-[100px] max-md:min-w-0 max-md:w-[30%]">
-              <h3 className="font-[var(--font-unbounded)] text-center text-[50px] font-bold text-[#F5F3EE] max-md:text-[34px]">
+            <div className="min-w-0 flex-1 sm:min-w-[100px] sm:flex-none">
+              <h3 className="font-[var(--font-unbounded)] text-[28px] font-bold text-[#F5F3EE] sm:text-[42px] lg:text-[48px]">
                 <Counter end={60} suffix="+" />
               </h3>
-
-              <p className="mt-1 text-center text-[12px] uppercase text-[#8F8A84] max-md:text-[9px] max-md:leading-4">
+              <p className="mt-1 text-[7px] uppercase text-[#8F8A84] sm:text-[10px] lg:text-[11px]">
                 Projects Completed
               </p>
             </div>
 
-            {/* Stat 3 */}
-            <div className="min-w-[100px] max-md:min-w-0 max-md:w-[30%]">
-              <h3 className="font-[var(--font-unbounded)] text-center text-[50px] font-bold text-[#F5F3EE] max-md:text-[34px]">
+            <div className="min-w-0 flex-1 sm:min-w-[100px] sm:flex-none">
+              <h3 className="font-[var(--font-unbounded)] text-[28px] font-bold text-[#F5F3EE] sm:text-[42px] lg:text-[48px]">
                 <Counter end={30} suffix="+" />
               </h3>
-
-              <p className="mt-1 text-center text-[12px] uppercase text-[#8F8A84] max-md:text-[9px] max-md:leading-4">
+              <p className="mt-1 text-[7px] uppercase text-[#8F8A84] sm:text-[10px] lg:text-[11px]">
                 Happy Clients
               </p>
             </div>
-
           </div>
-
         </div>
 
         {/* CENTER IMAGE */}
-        <div className="absolute left-[38%] top-0 z-10 h-full w-[25%] max-md:relative max-md:left-auto max-md:top-auto max-md:mt-10 max-md:h-[430px] max-md:w-full max-md:shrink-0">
+        <div className="relative z-10 order-2 mx-auto mt-10 h-[390px] w-full max-w-[360px] sm:h-[460px] sm:max-w-[430px] lg:mt-0 lg:h-[680px] lg:w-[30%] lg:max-w-none">
+          {/* Image Glow */}
+          <div className="absolute left-1/2 top-[45%] h-[260px] w-[260px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C89A5B]/10 blur-[80px] sm:h-[320px] sm:w-[320px]" />
 
-          {/* Soft Glow Behind Person */}
-          <div className="absolute left-1/2 top-[48%] h-[250px] w-[250px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C89A5B]/[0.045] blur-[70px] max-md:top-[45%] max-md:h-[260px] max-md:w-[260px]" />
+          {/* Outer Circle */}
+          <div className="absolute left-1/2 top-[43%] h-[285px] w-[285px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#CF9638]/25 sm:h-[360px] sm:w-[360px] lg:h-[410px] lg:w-[410px]" />
 
-          {/* OUTER CIRCLE */}
-          <div className="absolute left-1/2 top-[45%] h-[410px] w-[410px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#CF9638]/25 transition-all duration-700 hover:scale-[1.025] hover:border-[#C89A5B]/45 max-md:h-[320px] max-md:w-[320px]" />
+          {/* Inner Circle */}
+          <div className="absolute left-1/2 top-[43%] h-[245px] w-[245px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#F8DE82]/35 sm:h-[305px] sm:w-[305px] lg:h-[350px] lg:w-[350px]" />
 
-          {/* INNER CIRCLE */}
-          <div className="absolute left-1/2 top-[45%] h-[350px] w-[350px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#F8DE82]/45 transition-all duration-700 hover:scale-[1.03] hover:border-[#ffffff] max-md:h-[275px] max-md:w-[275px]" />
+          {/* Decorative Circles */}
+          <div className="absolute right-[10%] top-[8%] h-[32px] w-[32px] rounded-full border-[3px] border-[#CF9638] sm:h-[40px] sm:w-[40px]" />
 
-          {/* GREEN DECORATIVE CIRCLE */}
-          <div className="absolute right-[13%] top-[17%] h-[40px] w-[40px] rounded-full border-[4px] border-[#CF9638] shadow-[0_0_15px_rgba(101,229,28,0.10)] transition-transform duration-500 hover:scale-110 max-md:right-[17%] max-md:top-[10%] max-md:h-[34px] max-md:w-[34px]" />
+          <div className="absolute right-[2%] top-[5%] h-[24px] w-[24px] rounded-full border-[3px] border-[#F8DE82] sm:h-[30px] sm:w-[30px]" />
 
-          {/* SMALL YELLOW CIRCLE */}
-          <div className="absolute right-[7%] top-[13%] h-[30px] w-[30px] rounded-full border-[4px] border-[#F8DE82] transition-transform duration-500 hover:scale-110 max-md:right-[10%] max-md:top-[6%] max-md:h-[25px] max-md:w-[25px]" />
-
-          {/* YELLOW DOT */}
-          <div className="absolute right-[5%] top-[26%] h-[48px] w-[48px] rounded-full bg-[#ffffff] shadow-[0_0_25px_rgba(255,184,0,0.12)] transition-all duration-500 hover:scale-110 hover:shadow-[0_0_35px_rgba(255,184,0,0.22)] max-md:right-[6%] max-md:top-[20%] max-md:h-[40px] max-md:w-[40px]" />
+          <div className="absolute right-[0%] top-[18%] h-[38px] w-[38px] rounded-full bg-white shadow-[0_0_30px_rgba(255,255,255,0.12)] sm:h-[48px] sm:w-[48px]" />
 
           {/* PERSON */}
-          <div className="absolute bottom-0 left-1/2 w-[500px] -translate-x-1/2 max-md:w-[380px]">
+          <div className="absolute bottom-0 left-1/2 w-[300px] -translate-x-1/2 sm:w-[380px] lg:w-[500px]">
             <Image
-              src="/images/nadi.png"
+              src="/images/frontend.png"
               alt="Nadia Nisar - Frontend Developer"
               width={700}
-              height={500}
+              height={900}
               priority
-              className="h-[600px] w-full object-contain transition-all duration-700 ease-out hover:scale-[1.015]"
+              className="h-auto max-h-[440px] pt-[20px] lg:pt-[0px] w-full object-contain object-bottom sm:max-h-[550px] lg:max-h-[620px]"
             />
           </div>
-
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="relative z-20 ml-auto w-[31%] pb-4 pl-8 max-md:ml-0 max-md:mt-8 max-md:flex max-md:w-full max-md:flex-col max-md:items-center max-md:pb-12 max-md:pl-0 max-md:text-center">
-
-          {/* SPECIALIZED */}
-          <div className="mb-6 flex items-center gap-3 text-[14px] uppercase tracking-[0.06em] text-[#F5F3EE] max-md:justify-center">
-
-            <span className="rounded-full bg-[#ffffff]/[0.05] px-[15px] py-[6px] text-[25px] font-bold text-[#C89A5B] shadow-[0_4px_15px_rgba(200,154,91,0.10)] transition-all duration-300 hover:scale-110 hover:shadow-[0_8px_25px_rgba(200,154,91,0.20)]">
+        <div className="relative z-20 pt-[50px] sm:pt:[0px] lg:pt-[0px] order-3 w-full text-center lg:ml-auto lg:w-[31%] lg:pl-8 lg:text-left">
+          <div className="mb-5 flex items-center justify-center gap-3 text-[13px] uppercase tracking-[0.06em] text-[#F5F3EE] lg:justify-start sm:text-[14px]">
+            <span className="rounded-full bg-white/[0.05] px-[14px] py-[5px] text-[21px] font-bold text-[#C89A5B]">
               ♧
             </span>
-
-            <span>
-              Specialized In
-            </span>
-
+            <span>Specialized In</span>
           </div>
 
-          {/* RIGHT HEADING */}
-          <h2 className="font-[var(--font-unbounded)] text-[27px] font-bold uppercase leading-[1.25] tracking-[-0.025em] text-[#F5F3EE] max-md:max-w-[350px] max-md:text-[27px]">
+          <h2 className="font-[var(--font-unbounded)] text-[22px] font-bold uppercase leading-[1.25] tracking-[-0.025em] text-[#F5F3EE] sm:text-[26px] lg:text-[27px]">
             WordPress &
-
             <span className="mt-1 block text-[#C89A5B]">
               Shopify Development
             </span>
-
           </h2>
 
-          {/* RIGHT DESCRIPTION */}
-          <p className="mt-6 max-w-[410px] text-[16px] leading-7 text-[#AFAAA3] max-md:max-w-[350px] max-md:px-2 max-md:text-[14px] max-md:leading-6">
-            I create professional websites using WordPress, Elementor,
-            ACF and modern frontend technologies.
+          <p className="mx-auto mt-5 max-w-[350px] text-[14px] leading-6 text-[#AFAAA3] sm:text-[16px] sm:leading-7 lg:mx-0 lg:max-w-[410px]">
+            I create professional websites using WordPress, Elementor, ACF and
+            modern frontend technologies.
           </p>
 
-          {/* DOWNLOAD CV */}
-          <Button
-            href="#contact"
-            className="mt-8 "
-            icon={
-              <Download className="h-4 w-4 sm:h-5 sm:w-5" />
-            }
-          >
-            Hire Me Now
-          </Button>
-
-          {/* SOCIAL */}
-          <div className="mt-20 flex items-center gap-4 max-md:mt-12 max-md:justify-center">
-
-            <SocialLinks />
-
+          <div className="mt-7 flex justify-center lg:justify-start">
+            <Button
+              href="#contact"
+              icon={<Download className="h-4 w-4 sm:h-5 sm:w-5" />}
+            >
+              Hire Me Now
+            </Button>
           </div>
 
+          <div className="mt-10 flex items-center justify-center gap-4 lg:mt-16 lg:justify-start">
+            <SocialLinks />
+          </div>
         </div>
-
       </div>
-
-      
-
-
-    </section >
+    </section>
   );
 }
-
-
-{/* TECHNOLOGY BAR */}
-
-// <div className="relative z-30 mx-auto -mt-10 max-w-[1280px] px-6 lg:px-10 max-md:mt-0 max-md:px-4">
-
-//   <div className="mb-10 flex min-h-[60px] flex-wrap items-center justify-center gap-x-8 gap-y-3 rounded-[6px] border border-[#C89A5B]/20 bg-[#080808] px-6 py-4 shadow-[0_10px_35px_rgba(0,0,0,0.20)] transition-all duration-500 hover:border-[#C89A5B]/40 hover:bg-[#0A0A0A] max-md:gap-x-5 max-md:gap-y-4 max-md:px-4 max-md:py-5">
-
-//     {/* Title */}
-//     <span className="mr-2 text-[14px] font-semibold tracking-[0.04em] text-[#C89A5B] max-md:w-full max-md:text-center max-md:text-[11px]">
-//       TECHNOLOGIES I WORK WITH
-//     </span>
-
-//     {/* Technologies */}
-//     <span className="text-[13px] text-[#8E8982] transition-colors duration-300 hover:text-[#F5F3EE] max-md:text-[11px]">
-//       HTML5
-//     </span>
-
-//     <span className="text-[13px] text-[#8E8982] transition-colors duration-300 hover:text-[#F5F3EE] max-md:text-[11px]">
-//       CSS3
-//     </span>
-
-//     <span className="text-[13px] text-[#8E8982] transition-colors duration-300 hover:text-[#F5F3EE] max-md:text-[11px]">
-//       JavaScript
-//     </span>
-
-//     <span className="text-[13px] text-[#8E8982] transition-colors duration-300 hover:text-[#F5F3EE] max-md:text-[11px]">
-//       React
-//     </span>
-
-//     <span className="text-[13px] text-[#8E8982] transition-colors duration-300 hover:text-[#F5F3EE] max-md:text-[11px]">
-//       Next.js
-//     </span>
-
-//     <span className="text-[13px] text-[#8E8982] transition-colors duration-300 hover:text-[#F5F3EE] max-md:text-[11px]">
-//       Tailwind CSS
-//     </span>
-
-//     <span className="text-[13px] text-[#8E8982] transition-colors duration-300 hover:text-[#F5F3EE] max-md:text-[11px]">
-//       Bootstrap
-//     </span>
-
-//   </div>
-
-// </div>

@@ -5,42 +5,52 @@ import services from "@/data/services";
 
 export default function Services() {
     return (
-        <section
-            id="services"
-            className="relative overflow-hidden bg-[#0B0B0B] px-5 py-[70px] text-white sm:px-8 lg:px-10 lg:pt-[200px] lg:pb-[100px] lg:mt-[-80px] "
-        >
+        <section id="services" className="relative mt-[-150px] overflow-hidden bg-[#0B0B0B] px-5 pb-[60px] pt-[230px] text-white sm:mt-[-80px] sm:px-8 sm:pt-[160px] lg:mt-[-80px] lg:px-10 lg:pb-[100px] lg:pt-[200px]">
+
             {/* Background Glow */}
-            <div className="pointer-events-none absolute left-[-180px] top-[180px] h-[450px] w-[450px] rounded-full bg-[#CA943B] opacity-70 blur-[120px]" />
+            <div className="pointer-events-none absolute left-[-220px] top-[180px] h-[380px] w-[380px] rounded-full bg-[#CA943B] opacity-50 blur-[110px] sm:left-[-180px] sm:h-[450px] sm:w-[450px] sm:opacity-70 sm:blur-[120px]" />
 
             <div className="relative mx-auto max-w-[1280px]">
 
                 {/* Header */}
-                <div className="mb-12 grid items-end gap-8 lg:grid-cols-[1.2fr_0.8fr_auto]">
+                <div className="mb-10 flex flex-col items-center gap-7 text-center lg:mb-12 lg:grid lg:grid-cols-[1.2fr_0.8fr_auto] lg:items-end lg:gap-8 lg:text-left">
 
                     {/* Heading */}
-                    <div>
-                        <div className="mb-5 flex items-center gap-3 text-[#C89A5B] ">
-                            <span className="h-[2px] w-14 bg-[#C89A5B]" />
+                    <div className="w-full">
 
-                            <span className="font-[var(--font-manrope)] text-sm font-medium tracking-wide">
+                        {/* Section Label */}
+                        <div className="mb-5 flex items-center justify-center gap-3 text-[#C89A5B] lg:justify-start">
+
+                            <span className="h-[2px] w-10 bg-[#C89A5B] sm:w-14" />
+
+                            <span className="font-[var(--font-manrope)] text-xs font-medium tracking-wide sm:text-sm">
                                 SERVICES
                             </span>
 
-                            <span className="h-[2px] w-14 bg-[#C89A5B]" />
+                            <span className="h-[2px] w-10 bg-[#C89A5B] sm:w-14" />
+
                         </div>
 
-                        <h2 className="font-[var(--font-unbounded)] text-3xl font-bold uppercase leading-[1.12] tracking-tight sm:text-4xl lg:text-[48px]">
+                        {/* Heading */}
+                        <h2 className="font-[var(--font-unbounded)] text-[26px] font-bold uppercase leading-[1.15] tracking-tight sm:text-4xl lg:text-[48px]">
+
                             Delivering Excellence
+
                             <br />
+
                             Through{" "}
+
                             <span className="text-[#C89A5B]">
                                 Experience.
                             </span>
+
                         </h2>
+
                     </div>
 
                     {/* View All */}
-                    <div className="lg:ml-auto lg:flex lg:items-center lg:justify-end">
+                    <div className="flex justify-center lg:ml-auto lg:items-center lg:justify-end">
+
                         <Button
                             href="/services"
                             icon={
@@ -49,12 +59,13 @@ export default function Services() {
                         >
                             View All
                         </Button>
+
                     </div>
 
                 </div>
 
                 {/* Service Cards */}
-                <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+                <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
 
                     {services.slice(0, 3).map((service) => (
                         <ServiceCard
