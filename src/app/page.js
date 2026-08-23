@@ -3,6 +3,7 @@ import Marquee from "@/components/Marquee";
 import About from "@/sections/About";
 import ContactCTA from "@/sections/CTA";
 import Hero from "@/sections/Hero";
+import Projects from "@/sections/Projects";
 import Services from "@/sections/Services";
 
 
@@ -15,6 +16,8 @@ export default function Home() {
       <Logobar />
       <Services />
       <ContactCTA />
+      <Projects />
+      
     </main>
     
   );
