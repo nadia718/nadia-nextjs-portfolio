@@ -86,11 +86,14 @@ export default function About() {
                             </div>
 
                             {/*  PROFESSIONAL HEADING*/}
-                            <h2 className="max-w-[760px] font-[var(--font-unbounded)] text-[26px] font-bold uppercase leading-[1.5] tracking-[-0.035em] text-white sm:text-[32px] lg:text-[35px]">
+                            <h2 className="max-w-[760px] text-center font-[var(--font-unbounded)] text-[26px] font-bold uppercase leading-[1.5] tracking-[-0.035em] text-white sm:text-left sm:text-[32px] lg:text-[35px]">
                                 I TURN DESIGNS & IDEAS INTO
-                                <span  style={{ fontFamily: "var(--font-great-vibes)" }} className=" mt-1 block text-[28px] leading-[1.2] tracking-normal text-[#CE973A] sm:text-[35px] lg:text-[px] normal-case font-semibold " >
-                                    High-quality digital experiences.
 
+                                <span
+                                    style={{ fontFamily: "var(--font-great-vibes)" }}
+                                    className="mt-1 block text-[28px] font-semibold normal-case leading-[1.2] tracking-normal text-[#CE973A] sm:text-[35px] lg:text-[35px]"
+                                >
+                                    High-quality digital experiences.
                                 </span>
                             </h2>
 

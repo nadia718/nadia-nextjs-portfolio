@@ -65,7 +65,7 @@ export default function Hero() {
             {/* Label */}
             <div style={{ fontFamily: "var(--font-dancing-script)" }} className="mb-4 flex items-center justify-center gap-2 lg:justify-start">
 
-            
+
 
               <p className="text-[14px] font-semibold tracking-[0.12em] text-[#F2DA7D] sm:text-[12px]">
                 HI, I'M
@@ -122,26 +122,26 @@ export default function Hero() {
             <div className="mt-9 flex justify-center gap-2 sm:gap-5 lg:justify-start">
 
               <div className="min-w-0 flex-1 sm:min-w-[100px] sm:flex-none">
-                <h3 className="font-[var(--font-unbounded)] text-[28px] font-bold text-white transition-colors duration-500 group-hover/left:text-[#F5D97A] sm:text-[42px] lg:text-[35px]">
+                <h3 className="font-[var(--font-unbounded)] text-[28px] font-bold text-white transition-colors duration-500 group-hover/left:text-[#F5D97A] sm:text-[30px] lg:text-[35px]">
                   <Counter end={4} suffix="+" />
                 </h3>
 
-                <p className="mt-1 text-[16px] uppercase tracking-[0.08em] text-[#ffffff] sm:text-[10px] lg:text-[11px]">
+                <p className="mt-1 text-[10px] uppercase tracking-[0.08em] text-[#ffffff] sm:text-[10px] lg:text-[14px]">
                   Years Experience
                 </p>
               </div>
 
               <div className="min-w-0 flex-1 sm:min-w-[100px] sm:flex-none">
-                <h3 className="font-[var(--font-unbounded)] text-[28px] font-bold text-white transition-colors duration-500 group-hover/left:text-[#F5D97A] sm:text-[42px] lg:text-[35px]">
+                <h3 className="font-[var(--font-unbounded)] text-[28px] font-bold text-white transition-colors duration-500 group-hover/left:text-[#F5D97A] sm:text-[30px] lg:text-[35px]">
                   <Counter end={60} suffix="+" />
                 </h3>
 
-                <p className="mt-1 text-[16px] uppercase tracking-[0.08em] text-[#ffffff] sm:text-[10px] lg:text-[11px]">
+                <p className="mt-1 text-[10px] uppercase tracking-[0.08em] text-[#ffffff] sm:text-[10px] lg:text-[14px]">
                   Projects Completed
                 </p>
               </div>
 
-              
+
 
             </div>
           </div>
@@ -212,8 +212,8 @@ export default function Hero() {
             {/* Right heading */}
             <h2 className="font-[var(--font-unbounded)] text-[22px] font-semibold normal-case leading-[1.5] tracking-[-0.025em] text-white sm:text-[26px] lg:text-[23px]">
 
-              WordPress & 
-              <span   style={{ fontFamily: "var(--font-great-vibes)" }} className=" normal-case mt-1 block text-[#CE973A] transition-colors duration-500 group-hover/right:text-[#F5D97A] lg:text-[30px] font-semibold  leading-[1.2]">
+              WordPress &
+              <span style={{ fontFamily: "var(--font-great-vibes)" }} className=" normal-case mt-1 block text-[#CE973A] transition-colors duration-500 group-hover/right:text-[#F5D97A] lg:text-[30px] font-semibold  leading-[1.2]">
                 Shopify Development
               </span>
 
@@ -235,7 +235,7 @@ export default function Hero() {
               </Button>
             </div>
 
-            <div className="mt-[50px]">
+            <div className="mt-[50px] flex justify-center lg:justify-start">
               <SocialLinks />
             </div>
 

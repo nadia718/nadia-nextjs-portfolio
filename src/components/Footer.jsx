@@ -1,66 +1,47 @@
 import Link from "next/link";
 import Image from "next/image";
+import SocialLinks from "./SocialLinks";
 
 export default function Footer() {
     return (
-        <footer className="bg-[#080A07] text-white border-t border-[#B98A4A]/20">
+        <footer className="relative overflow-hidden border-t border-[#CE973A]/15 bg-[#000000] text-white">
 
-            <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+            {/* Background Glow */}
+            <div className="pointer-events-none absolute -left-[180px] top-[10%] h-[420px] w-[420px] rounded-full bg-[#CE973A]/[0.035] blur-[140px]" />
+
+            <div className="pointer-events-none absolute -right-[180px] bottom-[-150px] h-[450px] w-[450px] rounded-full bg-[#F5D97A]/[0.025] blur-[150px]" />
+
+            {/* Subtle Grid */}
+            <div className="pointer-events-none absolute inset-0 opacity-[0.025] [background-image:linear-gradient(rgba(206,151,58,0.35)_1px,transparent_1px),linear-gradient(90deg,rgba(206,151,58,0.35)_1px,transparent_1px)] [background-size:80px_80px]" />
+
+            <div className="relative z-10 mx-auto max-w-[1280px] px-6 lg:px-8">
 
                 {/* Main Footer */}
-                <div className="py-16 lg:py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+                <div className="grid grid-cols-1 gap-12 py-16 sm:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_1fr_1fr] lg:gap-16 lg:py-20">
 
                     {/* Brand */}
                     <div>
 
-                        <Link href="/" className="inline-block mb-6">
-
+                        <Link href="/" className="mb-6 inline-block">
                             <Image
                                 src="/images/logofooter.png"
                                 alt="Nadia Nisar | Frontend Developer"
                                 width={220}
                                 height={80}
-                                className="w-[210px] h-auto object-contain"
+                                className="h-auto w-[200px] object-contain"
                             />
-
                         </Link>
 
-                        <p className="text-[#A5A5A5] text-[15px] leading-7 max-w-[290px]">
+                        <p className="max-w-[300px] font-[var(--font-manrope)] text-[14px] leading-7 text-[#AFAAA3] sm:text-[15px]">
                             I create modern, responsive and user-focused websites
-                            that help businesses and brands grow online.
+                            that help businesses and brands build a strong online
+                            presence.
                         </p>
 
-
                         {/* Social Icons */}
-                        <div className="flex items-center gap-3 mt-7">
+                        <div className="mt-7 flex items-center gap-3">
 
-                            <a
-                                href="#"
-                                className="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-sm font-medium hover:bg-[#B98A4A] hover:text-black hover:border-[#B98A4A] transition-all duration-300"
-                            >
-                                in
-                            </a>
-
-                            <a
-                                href="#"
-                                className="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-sm font-medium hover:bg-[#B98A4A] hover:text-black hover:border-[#B98A4A] transition-all duration-300"
-                            >
-                                f
-                            </a>
-
-                            <a
-                                href="#"
-                                className="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-sm font-medium hover:bg-[#B98A4A] hover:text-black hover:border-[#B98A4A] transition-all duration-300"
-                            >
-                                X
-                            </a>
-
-                            <a
-                                href="#"
-                                className="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-sm font-medium hover:bg-[#B98A4A] hover:text-black hover:border-[#B98A4A] transition-all duration-300"
-                            >
-                                G
-                            </a>
+                            <SocialLinks />
 
                         </div>
 
@@ -70,56 +51,32 @@ export default function Footer() {
                     {/* Quick Links */}
                     <div>
 
-                        <h3 className="text-[18px] font-semibold mb-7">
-                            Quick Links
-                        </h3>
+                        <div className="mb-7 flex items-center gap-3">
+                            
+
+                            <h3 className="font-[var(--font-unbounded)] text-[20px] font-semibold uppercase tracking-[0.02em] text-[#F5F3EE]">
+                                Quick Links
+                            </h3>
+                        </div>
 
                         <ul className="space-y-4">
 
-                            <li>
-                                <Link
-                                    href="/"
-                                    className="text-[#9E9E9E] hover:text-[#D4A85C] transition-colors duration-300"
-                                >
-                                    Home
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link
-                                    href="#about"
-                                    className="text-[#9E9E9E] hover:text-[#D4A85C] transition-colors duration-300"
-                                >
-                                    About Me
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link
-                                    href="#services"
-                                    className="text-[#9E9E9E] hover:text-[#D4A85C] transition-colors duration-300"
-                                >
-                                    Services
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link
-                                    href="#projects"
-                                    className="text-[#9E9E9E] hover:text-[#D4A85C] transition-colors duration-300"
-                                >
-                                    Projects
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link
-                                    href="#contact"
-                                    className="text-[#9E9E9E] hover:text-[#D4A85C] transition-colors duration-300"
-                                >
-                                    Contact
-                                </Link>
-                            </li>
+                            {[
+                                ["Home", "/"],
+                                ["About Me", "#about"],
+                                ["Services", "#services"],
+                                ["Projects", "#projects"],
+                                ["Contact", "#contact"],
+                            ].map(([label, href]) => (
+                                <li key={label}>
+                                    <Link
+                                        href={href}
+                                        className="font-[var(--font-manrope)] text-[16px] text-[#9E9E9E] transition-all duration-300 hover:translate-x-1 hover:text-[#F5D97A]"
+                                    >
+                                        {label}
+                                    </Link>
+                                </li>
+                            ))}
 
                         </ul>
 
@@ -129,31 +86,29 @@ export default function Footer() {
                     {/* Services */}
                     <div>
 
-                        <h3 className="text-[18px] font-semibold mb-7">
-                            Services
-                        </h3>
+                        <div className="mb-7 flex items-center gap-3">
+
+                            <h3 className="font-[var(--font-unbounded)] text-[20px] font-semibold uppercase tracking-[0.02em] text-[#F5F3EE]">
+                                Services
+                            </h3>
+                        </div>
 
                         <ul className="space-y-4">
 
-                            <li className="text-[#9E9E9E]">
-                                WordPress Development
-                            </li>
-
-                            <li className="text-[#9E9E9E]">
-                                Frontend Development
-                            </li>
-
-                            <li className="text-[#9E9E9E]">
-                                Responsive Web Design
-                            </li>
-
-                            <li className="text-[#9E9E9E]">
-                                Elementor Development
-                            </li>
-
-                            <li className="text-[#9E9E9E]">
-                                Figma to WordPress
-                            </li>
+                            {[
+                                "WordPress Development",
+                                "Frontend Development",
+                                "Responsive Web Design",
+                                "Elementor Development",
+                                "Figma to WordPress",
+                            ].map((service) => (
+                                <li
+                                    key={service}
+                                    className="font-[var(--font-manrope)] text-[16px] text-[#9E9E9E] transition-colors duration-300 hover:text-[#F5D97A]"
+                                >
+                                    {service}
+                                </li>
+                            ))}
 
                         </ul>
 
@@ -163,52 +118,57 @@ export default function Footer() {
                     {/* Contact */}
                     <div>
 
-                        <h3 className="text-[18px] font-semibold mb-7">
-                            Get In Touch
-                        </h3>
+                        <div className="mb-7 flex items-center gap-3">
+
+                            <h3 className="font-[var(--font-unbounded)] text-[20px] font-semibold uppercase tracking-[0.02em] text-[#F5F3EE]">
+                                Get In Touch
+                            </h3>
+                        </div>
 
                         <div className="space-y-5">
 
+                            {/* Email */}
                             <div>
-
-                                <p className="text-[#6F6F6F] text-sm mb-1">
+                                <p className="mb-1 font-[var(--font-manrope)] text-[16px] text-[#6F6F6F]">
                                     Email
                                 </p>
 
                                 <a
-                                    href="mailto:hello@nadia.dev"
-                                    className="text-[#D0D0D0] hover:text-[#D4A85C] transition-colors duration-300"
+                                    href="mailto:nadianisar03@gmail.com"
+                                    className="font-[var(--font-manrope)] text-[14px] text-[#D0D0D0] transition-colors duration-300 hover:text-[#F5D97A]"
                                 >
-                                    hello@nadia.dev
+                                    nadianisar03@gmail.com
                                 </a>
-
                             </div>
 
 
+                            {/* Phone */}
                             <div>
+                                <p className="mb-1 font-[var(--font-manrope)] text-[16px] text-[#6F6F6F]">
+                                    Phone
+                                </p>
 
-                                <p className="text-[#6F6F6F] text-sm mb-1">
+                                <a
+                                    href="tel:03289102805"
+                                    className="font-[var(--font-manrope)] text-[14px] text-[#D0D0D0] transition-colors duration-300 hover:text-[#F5D97A]"
+                                >
+                                    03289102805
+                                </a>
+                            </div>
+
+
+                            {/* Location */}
+                            <div>
+                                <p className="mb-1 font-[var(--font-manrope)] text-[16px] text-[#6F6F6F]">
                                     Location
                                 </p>
 
-                                <p className="text-[#D0D0D0]">
+                                <p className="font-[var(--font-manrope)] text-[14px] text-[#D0D0D0]">
                                     Lahore, Pakistan
                                 </p>
-
                             </div>
 
 
-                            <Link
-                                href="#contact"
-                                className="inline-flex items-center gap-2 bg-[#B98A4A] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#D4A85C] hover:scale-105 transition-all duration-300"
-                            >
-                                Let's Talk
-
-                                <span className="text-lg">
-                                    →
-                                </span>
-
-                            </Link>
 
                         </div>
 
@@ -218,15 +178,15 @@ export default function Footer() {
 
 
                 {/* Bottom Footer */}
-                <div className="py-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div className="flex flex-col items-center justify-between gap-3 border-t border-white/[0.07] py-6 text-center md:flex-row md:text-left">
 
-                    <p className="text-[#707070] text-sm">
+                    <p className="font-[var(--font-manrope)] text-[12px] text-[#707070]">
                         © 2026 Nadia Nisar. All rights reserved.
                     </p>
 
-                    <p className="text-[#707070] text-sm">
+                    <p className="font-[var(--font-manrope)] text-[12px] text-[#707070]">
                         Designed & Developed by{" "}
-                        <span className="text-[#B98A4A]">
+                        <span className="text-[#CE973A]">
                             Nadia Nisar
                         </span>
                     </p>

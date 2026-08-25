@@ -22,10 +22,10 @@ export default function FinalCTA() {
             <div className="relative z-10 mx-auto grid max-w-[1180px] items-center gap-12 lg:grid-cols-2 lg:gap-20">
 
                 {/* LEFT CONTENT */}
-                <div className="max-w-[620px]">
+                <div className="max-w-[620px] text-center sm:text-left">
 
                     {/* Section Label */}
-                    <div className="mb-6 flex items-center gap-3 text-[#CE973A]">
+                    <div className="mb-6 flex items-center justify-center gap-3 text-[#CE973A] sm:justify-start">
                         <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
 
                         <span
@@ -40,12 +40,11 @@ export default function FinalCTA() {
 
                     {/* Heading */}
                     <h2 className="font-[var(--font-unbounded)] text-[32px] font-bold uppercase leading-[1.15] tracking-[-0.03em] text-white sm:text-[42px] lg:text-[35px]">
-                        LET'S TURN YOUR {" "}
-                        
+                        LET'S TURN YOUR{" "}
 
                         <span
                             style={{ fontFamily: "var(--font-great-vibes)" }}
-                            className="font-semibold normal-case tracking-normal text-[#CE973A] text-[40px] sm:text-[50px] lg:text-[35px]"
+                            className="text-[40px] font-semibold normal-case tracking-normal text-[#CE973A] sm:text-[50px] lg:text-[35px]"
                         >
                             Ideas into reality.
                         </span>
@@ -59,7 +58,7 @@ export default function FinalCTA() {
                     </p>
 
                     {/* Buttons */}
-                    <div className="mt-8 flex flex-wrap gap-4">
+                    <div className="mt-8 flex flex-wrap justify-center gap-4 sm:justify-start">
                         <Button
                             href="#contact"
                             icon={
@@ -78,6 +77,7 @@ export default function FinalCTA() {
                             View My Work
                         </Button>
                     </div>
+
                 </div>
 
                 {/* RIGHT CONTENT */}
@@ -94,7 +94,7 @@ export default function FinalCTA() {
                                 className="group flex items-center gap-5 rounded-full  bg-[linear-gradient(180deg,#1A1712_0%,#141414_100%)] px-6 py-5 shadow-[0_15px_45px_rgba(0,0,0,0.20)] transition-all duration-500 hover:-translate-x-1 hover:border-[#CE973A]/35 hover:shadow-[0_18px_50px_rgba(206,151,58,0.10)] sm:px-7 sm:py-6"
                             >
                                 {/* Number */}
-                                
+
 
                                 {/* Check */}
                                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#CE973A]/10 text-[#F5D97A] transition-all duration-300 group-hover:bg-[#CE973A] group-hover:text-[#0B0B0B]">

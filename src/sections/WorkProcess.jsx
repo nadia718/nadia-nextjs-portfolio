@@ -85,10 +85,10 @@ export default function WorkProcess() {
                         {processSteps.map((step, index) => (
                             <div
                                 key={step.number}
-                                className={`group relative flex min-h-[136px] items-center overflow-hidden rounded-full border border-[#CE973A]/[0.10] bg-[linear-gradient(180deg,#1A1813_0%,#151515_100%)] px-7 py-6 transition-all duration-500 hover:-translate-y-1 hover:border-[#CE973A]/30 hover:shadow-[0_18px_50px_rgba(206,151,58,0.10)] sm:min-h-[140px] sm:px-8 lg:px-8 ${index === 2 ? "lg:-ml-[80px] lg:mr-[80px]" : ""} ${index === 3 ? "lg:ml-[80px] lg:-mr-[80px]" : ""}`}                            >
+                                className={`group relative flex min-h-[136px] items-center overflow-hidden rounded-full  bg-[linear-gradient(180deg,#1A1813_0%,#151515_100%)] px-7 py-6 transition-all duration-500 hover:-translate-y-1  hover:shadow-[0_18px_50px_rgba(206,151,58,0.10)] sm:min-h-[140px] sm:px-8 lg:px-8 ${index === 2 ? "lg:-ml-[80px] lg:mr-[80px]" : ""} ${index === 3 ? "lg:ml-[80px] lg:-mr-[80px]" : ""}`}                            >
                                 <div className="pointer-events-none absolute inset-x-0 top-0 h-1/2 rounded-full bg-gradient-to-b from-[#CE973A]/[0.08] to-transparent" />
 
-                                <div className="relative z-10 mr-7 w-[78px] shrink-0 font-[var(--font-unbounded)] text-[48px] font-normal leading-none tracking-[-0.06em] text-transparent [-webkit-text-stroke:1.5px_rgba(245,217,122,0.72)] transition-all duration-500 group-hover:[-webkit-text-stroke:1.5px_rgba(245,217,122,1)] sm:mr-9 sm:w-[88px] sm:text-[52px]">
+                                <div className="relative z-10 mr-2 w-[78px] shrink-0 font-[var(--font-unbounded)] text-[48px] font-normal leading-none tracking-[-0.06em] text-transparent [-webkit-text-stroke:1.5px_rgba(245,217,122,0.72)] transition-all duration-500 group-hover:[-webkit-text-stroke:1.5px_rgba(245,217,122,1)] sm:mr-9 sm:w-[88px] sm:text-[52px]">
                                     {step.number}
                                 </div>
 
