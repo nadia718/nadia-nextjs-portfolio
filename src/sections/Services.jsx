@@ -19,7 +19,7 @@ export default function Services() {
                     <div className="w-full">
 
                         {/* Section Label */}
-                        <div className="mb-5 flex items-center justify-center gap-3 text-[#C89A5B] lg:justify-start">
+                        <div className="mb-2 flex items-center justify-center gap-3 text-[#C89A5B] lg:justify-start">
 
                             <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
 
@@ -33,7 +33,7 @@ export default function Services() {
                         </div>
 
                         {/* Heading */}
-                        <h2 className="font-[var(--font-unbounded)] text-[26px] font-bold uppercase leading-[1.2] tracking-tight sm:text-4xl lg:text-[35px]">
+                        <h2 className="font-[var(--font-unbounded)] text-[26px] font-bold normal-case leading-[1.2] tracking-tight sm:text-3xl lg:text-[35px]">
 
                             Delivering Excellence  {"   "}
 

@@ -110,8 +110,8 @@ export default function Skills() {
                         <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
                     </div>
 
-                    <h2 className="font-[var(--font-unbounded)] text-3xl font-bold uppercase leading-[1.12] tracking-tight sm:text-4xl lg:text-[35px]">
-                        Explore the Core Skills{"   "}
+                    <h2 className="font-[var(--font-unbounded)] text-3xl font-bold normal-case leading-[1.12] tracking-tight sm:text-4xl lg:text-[35px]">
+                        Explore the core skills{"   "}
 
                         <span style={{ fontFamily: "var(--font-great-vibes)" }} className=" normal-case font-semibold text-[#CE973A]">
                             Behind My Work.

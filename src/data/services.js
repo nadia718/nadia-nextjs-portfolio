@@ -49,6 +49,22 @@ const services = [
 
     {
         number: "07",
+        title: "Theme Customization",
+        description:
+            "Customizing existing WordPress themes to match your brand, design requirements and website functionality.",
+        image: "/images/Services/ThemeDevelopment.png",
+    },
+
+    {
+        number: "08",
+        title: "Plugin Configuration",
+        description:
+            "Installing, configuring and integrating WordPress plugins to add useful features and improve website functionality.",
+        image: "/images/Services/ACF.png",
+    },
+
+    {
+        number: "09",
         title: "Website Migration",
         description:
             "Safe website migration between hosting platforms, domains or CMS environments with minimal downtime.",
@@ -56,7 +72,7 @@ const services = [
     },
 
     {
-        number: "08",
+        number: "10",
         title: "Speed Optimization",
         description:
             "Website performance optimization focused on faster loading times and a smoother user experience.",
@@ -64,7 +80,7 @@ const services = [
     },
 
     {
-        number: "09",
+        number: "11",
         title: "SEO & Performance Optimization",
         description:
             "Technical and on-page improvements that help websites perform better and provide a stronger search experience.",
@@ -72,23 +88,31 @@ const services = [
     },
 
     {
-        number: "10",
-        title: "Responsive Development",
+        number: "12",
+        title: "Responsive Design",
         description:
             "Cross-device responsive implementation for desktop, tablet and mobile screens.",
         image: "/images/Services/Frontend.png",
     },
 
     {
-        number: "11",
-        title: "Multilingual Website Development",
+        number: "13",
+        title: "Multilingual Website",
         description:
             "Multilingual WordPress websites with properly structured language-specific content and layouts.",
         image: "/images/Services/WordPress (2).png",
     },
 
     {
-        number: "12",
+        number: "14",
+        title: "API Integration",
+        description:
+            "Connecting websites and frontend applications with external APIs and third-party services for dynamic functionality.",
+        image: "/images/Services/Frontend.png",
+    },
+
+    {
+        number: "15",
         title: "Website Maintenance & Bug Fixing",
         description:
             "Website maintenance, troubleshooting and bug fixing to keep websites stable and functional.",

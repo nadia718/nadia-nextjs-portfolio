@@ -25,7 +25,7 @@ export default function FinalCTA() {
                 <div className="max-w-[620px] text-center sm:text-left">
 
                     {/* Section Label */}
-                    <div className="mb-6 flex items-center justify-center gap-3 text-[#CE973A] sm:justify-start">
+                    <div className="mb-2 flex items-center justify-center gap-3 text-[#CE973A] sm:justify-start">
                         <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
 
                         <span
@@ -39,8 +39,8 @@ export default function FinalCTA() {
                     </div>
 
                     {/* Heading */}
-                    <h2 className="font-[var(--font-unbounded)] text-[32px] font-bold uppercase leading-[1.15] tracking-[-0.03em] text-white sm:text-[42px] lg:text-[35px]">
-                        LET'S TURN YOUR{" "}
+                    <h2 className="font-[var(--font-unbounded)] text-[32px] font-bold normal-case leading-[1.15] tracking-[-0.03em] text-white sm:text-[42px] lg:text-[35px]">
+                        Let's turn your{" "}
 
                         <span
                             style={{ fontFamily: "var(--font-great-vibes)" }}

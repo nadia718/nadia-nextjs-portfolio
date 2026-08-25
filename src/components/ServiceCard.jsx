@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
-export default function ServiceCard({ service }) {
+export default function ServiceCard({ service, href = "/services" }) {
     return (
         <article className="group relative overflow-hidden rounded-[22px] bg-[linear-gradient(160deg,_#0B0B0A_0%,_#BC8833_100%)] p-7 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(206,151,58,0.16)]">
 
@@ -58,7 +58,7 @@ export default function ServiceCard({ service }) {
 
                 {/* Arrow Button */}
                 <Link
-                    href="/services"
+                    href={href}
                     aria-label={`View ${service.title}`}
                     className="absolute bottom-[5px] right-[5px] z-30 flex h-[52px] w-[52px] items-center justify-center rounded-full bg-[#CA943B] text-[#ffffff] shadow-[0_8px_25px_rgba(202,148,59,0.20)] transition-all duration-300 hover:scale-110 hover:bg-[#F5D97A] hover:text-[#090909] hover:shadow-[0_10px_30px_rgba(245,217,122,0.30)]"
                 >

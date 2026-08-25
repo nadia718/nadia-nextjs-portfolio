@@ -75,7 +75,7 @@ export default function About() {
                         <div className="relative">
 
                             {/* Section Label */}
-                            <div className="mb-5 flex items-center justify-center gap-3 text-[#CE973A] sm:mb-7 sm:justify-start">
+                            <div className="mb-2 flex items-center justify-center gap-3 text-[#CE973A] sm:mb-2 sm:justify-start">
                                 <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
 
                                 <span style={{ fontFamily: "var(--font-dancing-script)" }} className=" text-[16px] font-bold  sm:text-[25px] normal-case text-[#F2DA7D]">
@@ -86,8 +86,8 @@ export default function About() {
                             </div>
 
                             {/*  PROFESSIONAL HEADING*/}
-                            <h2 className="max-w-[760px] text-center font-[var(--font-unbounded)] text-[26px] font-bold uppercase leading-[1.5] tracking-[-0.035em] text-white sm:text-left sm:text-[32px] lg:text-[35px]">
-                                I TURN DESIGNS & IDEAS INTO
+                            <h2 className="max-w-[760px] text-center font-[var(--font-unbounded)] text-[26px] font-bold normal-case leading-[1.5] tracking-[-0.035em] text-white sm:text-left sm:text-[32px] lg:text-[35px]">
+                                I turn designs & ideas into
 
                                 <span
                                     style={{ fontFamily: "var(--font-great-vibes)" }}
@@ -132,7 +132,7 @@ export default function About() {
                             {/* CTA */}
                             <div className="mt-9 flex justify-center sm:justify-start">
                                 <Button
-                                    href="#contact"
+                                    href="mailto:nadianisar03@gmail.com"
                                     icon={<ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />}
                                 >
                                     Let's Work Together

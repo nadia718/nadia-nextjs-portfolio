@@ -9,7 +9,7 @@ export default function Projects() {
             <div className="relative mx-auto max-w-[1280px]">
                 <div className="mb-12 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
                     <div className="text-center sm:text-left">
-                        <div className="mb-5 flex items-center justify-center gap-3 text-[#C89A5B] sm:justify-start">
+                        <div className="mb-2 flex items-center justify-center gap-3 text-[#C89A5B] sm:justify-start">
                             <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
 
                             <span
@@ -22,7 +22,7 @@ export default function Projects() {
                             <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
                         </div>
 
-                        <h2 className="font-[var(--font-unbounded)] text-3xl font-bold uppercase leading-[1.12] tracking-tight sm:text-4xl lg:text-[35px]">
+                        <h2 className="font-[var(--font-unbounded)] text-3xl font-bold normal-case leading-[1.12] tracking-tight sm:text-4xl lg:text-[35px]">
                             Where Design{" "}
 
                             <span

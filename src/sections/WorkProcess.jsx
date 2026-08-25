@@ -54,7 +54,7 @@ export default function WorkProcess() {
             <div className="relative z-10 mx-auto max-w-[1280px]">
                 {/* SECTION HEADER */}
                 <div className="mx-auto mb-14 max-w-[900px] text-center sm:mb-16">
-                    <div className="mb-5 flex items-center justify-center gap-3">
+                    <div className="mb-2 flex items-center justify-center gap-3">
                        <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
 
                             <span style={{ fontFamily: "var(--font-dancing-script)" }} className=" text-[16px] font-bold  sm:text-[25px] normal-case text-[#F2DA7D]">
@@ -64,7 +64,7 @@ export default function WorkProcess() {
                         <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
                     </div>
 
-                        <h2 className="font-[var(--font-unbounded)] text-[26px] font-bold uppercase leading-[1.2] tracking-tight sm:text-4xl lg:text-[35px]">
+                        <h2 className="font-[var(--font-unbounded)] text-[26px] font-bold normal-case leading-[1.6] tracking-tight sm:text-4xl lg:text-[35px]">
                         Step-by-Step Process Behind
                         <br />
                             <span style={{ fontFamily: "var(--font-great-vibes)" }} className=" text-[#CE973A] normal-case word-spacing-[5px] font-semibold text-[40px]">
@@ -88,7 +88,7 @@ export default function WorkProcess() {
                                 className={`group relative flex min-h-[136px] items-center overflow-hidden rounded-full  bg-[linear-gradient(180deg,#1A1813_0%,#151515_100%)] px-7 py-6 transition-all duration-500 hover:-translate-y-1  hover:shadow-[0_18px_50px_rgba(206,151,58,0.10)] sm:min-h-[140px] sm:px-8 lg:px-8 ${index === 2 ? "lg:-ml-[80px] lg:mr-[80px]" : ""} ${index === 3 ? "lg:ml-[80px] lg:-mr-[80px]" : ""}`}                            >
                                 <div className="pointer-events-none absolute inset-x-0 top-0 h-1/2 rounded-full bg-gradient-to-b from-[#CE973A]/[0.08] to-transparent" />
 
-                                <div className="relative z-10 mr-2 w-[78px] shrink-0 font-[var(--font-unbounded)] text-[48px] font-normal leading-none tracking-[-0.06em] text-transparent [-webkit-text-stroke:1.5px_rgba(245,217,122,0.72)] transition-all duration-500 group-hover:[-webkit-text-stroke:1.5px_rgba(245,217,122,1)] sm:mr-9 sm:w-[88px] sm:text-[52px]">
+                                <div className="relative z-10  w-[78px] shrink-0 font-[var(--font-unbounded)] text-[48px] font-normal leading-none tracking-[-0.06em] text-transparent [-webkit-text-stroke:1.5px_rgba(245,217,122,0.72)] transition-all duration-500 group-hover:[-webkit-text-stroke:1.5px_rgba(245,217,122,1)]  sm:w-[88px] sm:text-[52px]">
                                     {step.number}
                                 </div>
 
