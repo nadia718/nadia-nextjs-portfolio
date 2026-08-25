@@ -231,7 +231,7 @@ export default function Hero() {
                 href="/Nadia.pdf" target="_blank" rel="noopener noreferrer"
                 icon={<Download className="h-4 w-4 sm:h-5 sm:w-5" />}
               >
-                Hire Me Now
+                Download my CV
               </Button>
             </div>
 
