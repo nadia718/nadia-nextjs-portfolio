@@ -10,14 +10,18 @@ export default function Projects() {
                 <div className="mb-12 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
                     <div>
                         <div className="mb-5 flex items-center gap-3 text-[#C89A5B]">
-                            <span className="h-[2px] w-12 bg-[#C89A5B]" />
-                            <span className="font-[var(--font-manrope)] text-sm font-medium tracking-wide">PROJECTS</span>
-                            <span className="h-[2px] w-12 bg-[#C89A5B]" />
+                            <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
+
+                            <span style={{ fontFamily: "var(--font-dancing-script)" }} className=" text-[16px] font-bold  sm:text-[25px] normal-case text-[#F2DA7D]">
+                                Projects
+                            </span>
+                           <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
+
                         </div>
 
-                        <h2 className="font-[var(--font-unbounded)] text-3xl font-bold uppercase leading-[1.12] tracking-tight sm:text-4xl lg:text-[48px]">
-                            Where Design Meets{" "}
-                            <span className="text-[#C89A5B]">Function.</span>
+                        <h2 className="font-[var(--font-unbounded)] text-3xl font-bold uppercase leading-[1.12] tracking-tight sm:text-4xl lg:text-[35px]">
+                            Where Design {" "}
+                           <span  style={{ fontFamily: "var(--font-great-vibes)" }}className=" normal-case font-semibold text-[#CE973A]">Meets Function.</span>
                         </h2>
                     </div>
 

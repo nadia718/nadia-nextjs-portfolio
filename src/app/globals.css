@@ -1,30 +1,30 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0b0b0b;
+  --foreground: #ffffff;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --font-sans: var(--font-manrope);
+  --font-script: var(--font-great-vibes);
+  --font-dancing: var(--font-dancing-script);
+  --font-display: var(--font-unbounded);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-manrope);
 }
-
 
 .marquee {
   width: 100%;
@@ -45,4 +45,20 @@ body {
   to {
     transform: translateX(-50%);
   }
+}
+
+.font-display {
+  font-family: var(--font-unbounded);
+}
+
+.font-script {
+  font-family: var(--font-great-vibes);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-dancing {
+  font-family: var(--font-dancing-script);
+  font-weight: 400;
+  font-style: normal;
 }

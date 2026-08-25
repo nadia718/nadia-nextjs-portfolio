@@ -5,6 +5,8 @@ import ContactCTA from "@/sections/CTA";
 import Hero from "@/sections/Hero";
 import Projects from "@/sections/Projects";
 import Services from "@/sections/Services";
+import Skills from "@/sections/Skills";
+import WorkProcess from "@/sections/WorkProcess";
 
 
 export default function Home() {
@@ -17,6 +19,8 @@ export default function Home() {
       <Services />
       <ContactCTA />
       <Projects />
+      <Skills />
+      <WorkProcess />
       
     </main>
     

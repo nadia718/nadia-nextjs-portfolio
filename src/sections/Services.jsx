@@ -5,7 +5,7 @@ import services from "@/data/services";
 
 export default function Services() {
     return (
-        <section id="services" className="relative mt-[-150px] overflow-hidden bg-[#0B0B0B] px-5 pb-[60px] pt-[230px] text-white sm:mt-[-80px] sm:px-8 sm:pt-[160px] lg:mt-[-80px] lg:px-10 lg:pb-[100px] lg:pt-[200px]">
+        <section id="services" className="relative mt-[-150px] overflow-hidden bg-[#0B0B0B] px-5 pb-[60px] pt-[230px] text-white sm:mt-[-80px] sm:px-8 sm:pt-[160px] lg:mt-[-110px] lg:px-10 lg:pb-[100px] lg:pt-[200px]">
 
             {/* Background Glow */}
             <div className="pointer-events-none absolute left-[-220px] top-[180px] h-[380px] w-[380px] rounded-full bg-[#CA943B] opacity-50 blur-[110px] sm:left-[-180px] sm:h-[450px] sm:w-[450px] sm:opacity-70 sm:blur-[120px]" />
@@ -21,27 +21,24 @@ export default function Services() {
                         {/* Section Label */}
                         <div className="mb-5 flex items-center justify-center gap-3 text-[#C89A5B] lg:justify-start">
 
-                            <span className="h-[2px] w-10 bg-[#C89A5B] sm:w-14" />
+                            <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
 
-                            <span className="font-[var(--font-manrope)] text-xs font-medium tracking-wide sm:text-sm">
-                                SERVICES
+
+                            <span style={{ fontFamily: "var(--font-dancing-script)" }} className=" text-[16px] font-bold  sm:text-[25px] normal-case text-[#F2DA7D]">
+                                Services
                             </span>
 
-                            <span className="h-[2px] w-10 bg-[#C89A5B] sm:w-14" />
+                            <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
 
                         </div>
 
                         {/* Heading */}
-                        <h2 className="font-[var(--font-unbounded)] text-[26px] font-bold uppercase leading-[1.15] tracking-tight sm:text-4xl lg:text-[48px]">
+                        <h2 className="font-[var(--font-unbounded)] text-[26px] font-bold uppercase leading-[1.2] tracking-tight sm:text-4xl lg:text-[35px]">
 
-                            Delivering Excellence
+                            Delivering Excellence  {"   "}
 
-                            <br />
-
-                            Through{" "}
-
-                            <span className="text-[#C89A5B]">
-                                Experience.
+                            <span style={{ fontFamily: "var(--font-great-vibes)" }} className=" text-[#CE973A] normal-case word-spacing-[5px] font-semibold text-[40px]">
+                               Through Experience.
                             </span>
 
                         </h2>
