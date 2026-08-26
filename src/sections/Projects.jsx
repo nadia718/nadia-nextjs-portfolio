@@ -7,35 +7,52 @@ export default function Projects() {
     return (
         <section id="projects" className="relative overflow-hidden bg-[#0B0B0B] px-5 py-20 text-white sm:px-8 lg:px-10 lg:py-28">
             <div className="relative mx-auto max-w-[1280px]">
-                <div className="mb-12 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-                    <div className="text-center sm:text-left">
-                        <div className="mb-2 flex items-center justify-center gap-3 text-[#C89A5B] sm:justify-start">
-                            <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
+                <div className="mb-10 flex flex-col gap-8 sm:mb-12 lg:flex-row lg:items-end lg:justify-between lg:gap-10">
+                    {/* Left Content */}
+                    <div className="w-full lg:w-1/2">
+                        <div className="mb-3 flex items-center justify-center gap-3 sm:justify-start">
+                            <span className="h-[2px] w-8 bg-[#F2DA7D] sm:w-10" />
 
                             <span
                                 style={{ fontFamily: "var(--font-dancing-script)" }}
-                                className="text-[16px] font-bold normal-case text-[#F2DA7D] sm:text-[25px]"
+                                className="text-[18px] font-bold text-[#F2DA7D] sm:text-[22px] md:text-[25px]"
                             >
                                 Projects
                             </span>
 
-                            <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
+                            <span className="h-[2px] w-8 bg-[#F2DA7D] sm:w-10" />
                         </div>
 
-                        <h2 className="font-[var(--font-unbounded)] text-3xl font-bold normal-case leading-[1.12] tracking-tight sm:text-4xl lg:text-[35px]">
-                            Where Design{" "}
-
+                        <h2
+                            className="text-center font-[var(--font-unbounded)] text-[28px] font-bold leading-[1.5] tracking-tight sm:text-left sm:text-[32px] md:text-[36px] lg:text-[35px]"
+                        >
+                            Turning Ideas Into{" "}
                             <span
                                 style={{ fontFamily: "var(--font-great-vibes)" }}
-                                className="normal-case font-semibold text-[#CE973A]"
+                                className="font-semibold text-[#CE973A]"
                             >
-                                Meets Function.
+                                Digital Experiences.
                             </span>
                         </h2>
                     </div>
-                    <p className="max-w-[420px] text-center text-[16px] leading-7 text-[#AFAAA3] sm:text-left">
-                        A selection of websites and digital experiences built with clean design, responsive development and attention to detail.
-                    </p>
+
+                    {/* Right Description */}
+                    <div className="w-full lg:w-1/2">
+                        <p
+                            className="
+                mx-auto max-w-[650px]
+                text-center text-[14px]
+                leading-6 text-[#AFAAA3]
+                sm:text-left sm:text-[15px] sm:leading-7
+                md:text-[16px]
+                lg:ml-auto lg:mr-0
+            "
+                        >
+                            A selection of websites I’ve designed and developed across
+                            WordPress, React, Next.js and Shopify — focused on responsive
+                            design, performance and real-world business needs.
+                        </p>
+                    </div>
                 </div>
 
                 <div className="grid gap-5 md:grid-cols-6">

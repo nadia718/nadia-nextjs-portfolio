@@ -3,41 +3,49 @@ import { ArrowUpRight } from "lucide-react";
 const processSteps = [
     {
         number: "01",
-        title: "Research & Discovery",
+        title: "Requirement & Discovery",
         description:
-            "Understanding your business, audience and goals to create the right digital direction.",
+            "I first understand your business, goals, target audience, content, required features and exact project requirements before deciding how the website should be built.",
     },
+
     {
         number: "02",
-        title: "Planning & Strategy",
+        title: "Research & Direction",
         description:
-            "Planning the structure, user journey and technical approach before development begins.",
+            "I research your industry, competitors and suitable solutions to find the right structure, functionality and design direction for your website.",
     },
+
     {
         number: "03",
-        title: "Design & Development",
+        title: "Design & Planning",
         description:
-            "Turning ideas into clean, responsive and professional interfaces built around your brand.",
+            "I plan the website structure, sections and user flow, then select or adapt the design according to your brand, requirements and business goals.",
     },
+
     {
         number: "04",
-        title: "Launch & Delivery",
+        title: "Development & Integration",
         description:
-            "Testing everything carefully and delivering a polished website ready for real users.",
+            "I turn the approved direction into a responsive website using WordPress, Elementor, ACF, custom themes, React, Next.js or Shopify according to the project.",
     },
+
     {
         number: "05",
-        title: "Testing & Review",
+        title: "Optimization & Testing",
         description:
-            "Checking responsiveness, performance, usability and functionality across devices.",
+            "I optimize images and website assets, improve performance, check responsive layouts and test functionality across desktop, tablet and mobile devices.",
     },
+
     {
         number: "06",
-        title: "Support & Maintenance",
+        title: "Launch & Ongoing Support",
         description:
-            "Providing ongoing improvements, fixes and support to keep your website running smoothly.",
+            "After final review, I handle deployment, migration or launch requirements and provide maintenance, updates and bug fixing when ongoing support is needed.",
     },
 ];
+
+
+
 
 export default function WorkProcess() {
     return (
@@ -55,27 +63,25 @@ export default function WorkProcess() {
                 {/* SECTION HEADER */}
                 <div className="mx-auto mb-14 max-w-[900px] text-center sm:mb-16">
                     <div className="mb-2 flex items-center justify-center gap-3">
-                       <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
+                        <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
 
-                            <span style={{ fontFamily: "var(--font-dancing-script)" }} className=" text-[16px] font-bold  sm:text-[25px] normal-case text-[#F2DA7D]">
+                        <span style={{ fontFamily: "var(--font-dancing-script)" }} className=" text-[16px] font-bold  sm:text-[25px] normal-case text-[#F2DA7D]">
                             Work Process
                         </span>
 
                         <span className="h-[2px] w-10 bg-[#F2DA7D] sm:w-10" />
                     </div>
 
-                        <h2 className="font-[var(--font-unbounded)] text-[26px] font-bold normal-case leading-[1.6] tracking-tight sm:text-4xl lg:text-[35px]">
+                    <h2 className="font-[var(--font-unbounded)] text-[26px] font-bold normal-case leading-[1.6] tracking-tight sm:text-4xl lg:text-[35px]">
                         Step-by-Step Process Behind
                         <br />
-                            <span style={{ fontFamily: "var(--font-great-vibes)" }} className=" text-[#CE973A] normal-case word-spacing-[5px] font-semibold text-[40px]">
+                        <span style={{ fontFamily: "var(--font-great-vibes)" }} className="text-[26px] text-[#CE973A] normal-case word-spacing-[5px] font-semibold lg:text-[40px]">
                             Every Great Project.
                         </span>
                     </h2>
 
                     <p className="mx-auto mt-6 max-w-[760px] font-[var(--font-manrope)] text-[15px] leading-7 text-[#AFAAA3] sm:text-[16px]">
-                        From the first idea to the final launch, I follow a clear
-                        and professional process to create websites that look great,
-                        perform well and achieve real business goals.
+                        I follow a structured development process that turns client requirements into professional, responsive and well-optimized websites — from research and planning to development, testing and final delivery.
                     </p>
                 </div>
 
@@ -112,7 +118,7 @@ export default function WorkProcess() {
 
                         <div className="absolute inset-[-4px] rounded-full border border-dashed border-[#F5D97A]/35 animate-[spin_18s_linear_infinite]" />
 
-     
+
 
                         <div className="relative z-20 flex h-[62px] w-[62px] items-center justify-center rounded-full bg-gradient-to-br from-[#CE973A] to-[#F5D97A] text-[#0B0B0B] shadow-[0_0_30px_rgba(206,151,58,0.30)]">
                             <ArrowUpRight className="h-7 w-7 stroke-[2]" />

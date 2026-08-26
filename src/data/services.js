@@ -3,15 +3,15 @@ const services = [
         number: "01",
         title: "WordPress Development",
         description:
-            "Professional and responsive WordPress websites built around your business requirements.",
+            "Professional, responsive and scalable WordPress websites tailored to your business goals, content and brand identity.",
         image: "/images/Services/WordPress (2).png",
     },
 
     {
         number: "02",
-        title: "Frontend Development",
+        title: "React & Next.js Development",
         description:
-            "Modern and responsive frontend interfaces built with clean code and a strong focus on user experience.",
+            "Modern and high-performance web interfaces built with React and Next.js using reusable components and clean frontend architecture.",
         image: "/images/Services/Frontend.png",
     },
 
@@ -19,7 +19,7 @@ const services = [
         number: "03",
         title: "Shopify Development",
         description:
-            "Modern Shopify stores with customized themes, responsive layouts and ecommerce functionality.",
+            "Responsive Shopify stores with customized themes, branded layouts and user-friendly ecommerce experiences.",
         image: "/images/Services/E-commerce.png",
     },
 
@@ -27,7 +27,7 @@ const services = [
         number: "04",
         title: "Elementor & ACF Development",
         description:
-            "Custom Elementor layouts and dynamic ACF-powered websites with flexible content management.",
+            "Flexible WordPress websites using Elementor and ACF for custom layouts, dynamic content and easy content management.",
         image: "/images/Services/ACF.png",
     },
 
@@ -35,7 +35,7 @@ const services = [
         number: "05",
         title: "Figma to WordPress",
         description:
-            "Pixel-perfect WordPress websites converted from Figma designs with responsive implementation.",
+            "Pixel-accurate and responsive WordPress websites transformed from Figma designs with careful attention to every detail.",
         image: "/images/Services/fignatowordpress.png",
     },
 
@@ -43,7 +43,7 @@ const services = [
         number: "06",
         title: "Custom Theme Development",
         description:
-            "Custom WordPress themes developed with clean code, flexible layouts and unique functionality.",
+            "Unique WordPress themes built from the ground up with clean code, flexible layouts and business-specific functionality.",
         image: "/images/Services/ThemeDevelopment.png",
     },
 
@@ -51,15 +51,15 @@ const services = [
         number: "07",
         title: "Theme Customization",
         description:
-            "Customizing existing WordPress themes to match your brand, design requirements and website functionality.",
+            "Existing WordPress themes customized to match your brand, visual requirements, content structure and desired functionality.",
         image: "/images/Services/ThemeDevelopment.png",
     },
 
     {
         number: "08",
-        title: "Plugin Configuration",
+        title: "Plugin Configuration & Integration",
         description:
-            "Installing, configuring and integrating WordPress plugins to add useful features and improve website functionality.",
+            "WordPress plugins configured and integrated to extend website functionality while maintaining a reliable user experience.",
         image: "/images/Services/ACF.png",
     },
 
@@ -67,15 +67,15 @@ const services = [
         number: "09",
         title: "Website Migration",
         description:
-            "Safe website migration between hosting platforms, domains or CMS environments with minimal downtime.",
+            "Secure website migration between domains, hosting providers or platforms with careful handling of content, files and functionality.",
         image: "/images/Services/ThemeDevelopment.png",
     },
 
     {
         number: "10",
-        title: "Speed Optimization",
+        title: "Website Speed Optimization",
         description:
-            "Website performance optimization focused on faster loading times and a smoother user experience.",
+            "Performance improvements focused on faster loading, optimized assets and a smoother experience across devices.",
         image: "/images/Services/speedoptimization.png",
     },
 
@@ -83,23 +83,23 @@ const services = [
         number: "11",
         title: "SEO & Performance Optimization",
         description:
-            "Technical and on-page improvements that help websites perform better and provide a stronger search experience.",
+            "On-page and technical improvements that strengthen website performance, structure, usability and search engine readiness.",
         image: "/images/Services/onpageseo.png",
     },
 
     {
         number: "12",
-        title: "Responsive Design",
+        title: "Responsive Web Development",
         description:
-            "Cross-device responsive implementation for desktop, tablet and mobile screens.",
+            "Fully responsive interfaces carefully adapted for desktop, tablet and mobile screens for a consistent experience everywhere.",
         image: "/images/Services/Frontend.png",
     },
 
     {
         number: "13",
-        title: "Multilingual Website",
+        title: "Multilingual Websites",
         description:
-            "Multilingual WordPress websites with properly structured language-specific content and layouts.",
+            "Structured multilingual WordPress websites with language-specific content, navigation and responsive layouts.",
         image: "/images/Services/WordPress (2).png",
     },
 
@@ -107,15 +107,15 @@ const services = [
         number: "14",
         title: "API Integration",
         description:
-            "Connecting websites and frontend applications with external APIs and third-party services for dynamic functionality.",
+            "Third-party API integrations that connect websites and web applications with external platforms and dynamic services.",
         image: "/images/Services/Frontend.png",
     },
 
     {
         number: "15",
-        title: "Website Maintenance & Bug Fixing",
+        title: "Maintenance & Bug Fixing",
         description:
-            "Website maintenance, troubleshooting and bug fixing to keep websites stable and functional.",
+            "Reliable website maintenance, troubleshooting and bug fixing to keep your website secure, stable and functioning smoothly.",
         image: "/images/Services/ThemeDevelopment.png",
     },
 ];

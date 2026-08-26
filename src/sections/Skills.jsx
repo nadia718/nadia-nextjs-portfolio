@@ -5,24 +5,9 @@ import { useEffect, useRef, useState } from "react";
 
 const skills = [
     {
-        name: "HTML",
-        percentage: 80,
-        icons: ["/images/logo/html5.svg"],
-    },
-    {
-        name: "CSS",
-        percentage: 80,
-        icons: ["/images/logo/css.svg"],
-    },
-    {
-        name: "Tailwind",
-        percentage: 75,
-        icons: ["/images/logo/tailwindcss.svg"],
-    },
-    {
-        name: "JavaScript",
-        percentage: 50,
-        icons: ["/images/logo/javascript.svg"],
+        name: "WordPress",
+        percentage: 95,
+        icons: ["/images/logo/wordpress.svg"],
     },
     {
         name: "React.js",
@@ -34,20 +19,11 @@ const skills = [
         percentage: 70,
         icons: ["/images/logo/nextdotjs.svg"],
     },
-    {
-        name: "WordPress",
-        percentage: 95,
-        icons: ["/images/logo/wordpress.svg"],
-    },
+    
     {
         name: "WordPress Custom Themes",
         percentage: 75,
         icons: ["/images/logo/wordpress.svg"],
-    },
-    {
-        name: "Elementor",
-        percentage: 90,
-        icons: ["E"],
     },
     {
         name: "Shopify",
@@ -55,15 +31,50 @@ const skills = [
         icons: ["/images/logo/shopify.svg"],
     },
     {
+        name: "Elementor",
+        percentage: 90,
+        icons: ["E"],
+    },
+    {
+        name: "Figma to WordPress",
+        percentage: 85,
+        icons: ["F"],
+    },
+     {
+        name: "JavaScript",
+        percentage: 50,
+        icons: ["/images/logo/javascript.svg"],
+    },
+    {
+        name: "Tailwind",
+        percentage: 75,
+        icons: ["/images/logo/tailwindcss.svg"],
+    },
+    {
         name: "Bootstrap",
         percentage: 90,
         icons: ["/images/logo/bootstrap.svg"],
     },
     {
-        name: "Figma",
-        percentage: 85,
-        icons: ["F"],
+        name: "HTML",
+        percentage: 80,
+        icons: ["/images/logo/html5.svg"],
     },
+    
+    {
+        name: "CSS",
+        percentage: 80,
+        icons: ["/images/logo/css.svg"],
+    },
+    
+   
+    
+    
+   
+    
+    
+    
+    
 ];
 export default function Skills() {
     const sectionRef = useRef(null);

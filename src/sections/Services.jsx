@@ -33,12 +33,12 @@ export default function Services() {
                         </div>
 
                         {/* Heading */}
-                        <h2 className="font-[var(--font-unbounded)] text-[26px] font-bold normal-case leading-[1.2] tracking-tight sm:text-3xl lg:text-[35px]">
+                        <h2 className="font-[var(--font-unbounded)] text-[26px] font-bold normal-case leading-[1.9] tracking-tight sm:text-3xl lg:text-[35px]">
 
-                            Delivering Excellence  {"   "}
+                            Building Digital Experiences  {"   "}
 
-                            <span style={{ fontFamily: "var(--font-great-vibes)" }} className=" text-[#CE973A] normal-case word-spacing-[5px] font-semibold text-[40px]">
-                               Through Experience.
+                            <span style={{ fontFamily: "var(--font-great-vibes)" }} className=" text-[#CE973A] text-[26px] normal-case word-spacing-[5px] font-semibold lg:text-[40px] word-spacing-[8px]">
+                               That Drive Results.
                             </span>
 
                         </h2>

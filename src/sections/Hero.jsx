@@ -210,19 +210,18 @@ export default function Hero() {
             </div>
 
             {/* Right heading */}
-            <h2 className="font-[var(--font-unbounded)] text-[22px] font-semibold normal-case leading-[1.5] tracking-[-0.025em] text-white sm:text-[26px] lg:text-[23px]">
+            <h2 className="font-[var(--font-unbounded)] text-[22px] font-medium normal-case leading-[1.9] tracking-[-0.025em] text-white sm:text-[26px] lg:text-[23px]">
 
-              WordPress &
-              <span style={{ fontFamily: "var(--font-great-vibes)" }} className=" normal-case mt-1 block text-[#CE973A] transition-colors duration-500 group-hover/right:text-[#F5D97A] lg:text-[30px] font-semibold  leading-[1.2]">
-                Shopify Development
+              WordPress & Shopify
+              <span style={{ fontFamily: "var(--font-great-vibes)" }} className=" normal-case mt-1 block text-[#CE973A] transition-colors duration-500 group-hover/right:text-[#F5D97A] lg:text-[30px] font-semibold word-spacing-[4px] leading-[1.2]">
+                React / Next js 
               </span>
 
             </h2>
 
             {/* Description */}
             <p className="mx-auto mt-5 max-w-[350px] text-[16px] leading-6 text-[#ffffff] sm:text-[16px] sm:leading-7 lg:mx-0 lg:max-w-[410px]">
-              I create professional websites using WordPress, Elementor, ACF
-              and modern frontend technologies.
+              I build responsive websites and modern web experiences using React.js, Next.js, WordPress, Shopify and modern frontend technologies.
             </p>
 
             {/* CTA */}

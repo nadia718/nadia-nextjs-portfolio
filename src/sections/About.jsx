@@ -98,33 +98,23 @@ export default function About() {
                             </h2>
 
                             {/* Description */}
-                            <div className="mt-8 space-y-4 text-center font-[var(--font-manrope)] text-[15px] leading-7 text-[#AFAAA3] sm:text-left sm:text-[16px]">
+                            <div className="mt-8  text-center font-[var(--font-manrope)] text-[15px] leading-6 text-[#AFAAA3] sm:text-left sm:text-[16px]">
 
                                 <p>
-                                    I specialize in WordPress and Frontend Development, creating
-                                    modern, responsive and user-friendly websites for businesses,
-                                    brands and online platforms.
+                                    I’m Nadia Nisar, a Frontend Developer with 4+ years of experience building modern, responsive and user-focused websites for businesses, brands and online platforms.
                                 </p>
 
                                 <p>
-                                    I work with both custom code and CMS solutions, including
-                                    WordPress, Elementor and ACF, and convert Figma designs into
-                                    pixel-perfect websites with clean, professional and responsive
-                                    interfaces.
+                                    I specialize in WordPress & Modern Frontend Development with Elementor, ACF, WooCommerce and custom themes, while also working with React, Next.js, Tailwind CSS and Shopify to create modern and scalable web experiences.
+
                                 </p>
 
                                 <p>
-                                    My experience covers ecommerce, booking, recruitment,
-                                    business and service websites, along with custom theme
-                                    development, website migration, bug fixing, speed
-                                    optimization, on-page SEO and cross-device responsive
-                                    development.
+                                    My experience covers ecommerce, booking, recruitment, business and service websites, as well as Figma-to-WordPress development, custom UI implementation, API integration, website migration, bug fixing, speed optimization and on-page SEO.
                                 </p>
 
                                 <p>
-                                    I focus on clean implementation, professional UI, strong
-                                    performance and websites that are easy to manage and built
-                                    around each client's requirements.
+                                   I focus on turning designs into clean, pixel-accurate and responsive interfaces that work smoothly across devices. From frontend implementation to hosting and deployment, I build websites around each client’s goals, requirements and long-term usability.
                                 </p>
 
                             </div>
