@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import Button from "@/components/Button";
 import Counter from "@/components/Counter";
@@ -176,7 +175,7 @@ export default function Hero() {
           <div className="absolute bottom-0 left-1/2 w-[300px] -translate-x-1/2 transition-transform duration-700 ease-out group-hover/image:scale-[1.018] sm:w-[380px] lg:w-[500px]">
 
             <Image
-              src="/images/frontend.png"
+              src="/images/bimage.png"
               alt="Nadia Nisar - Frontend Developer"
               width={700}
               height={900}
