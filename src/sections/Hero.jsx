@@ -226,7 +226,7 @@ export default function Hero() {
             {/* CTA */}
             <div className="mt-7 flex justify-center lg:justify-start">
               <Button
-                href="/Nadia.pdf" target="_blank" rel="noopener noreferrer"
+                href="/Nadia Nisar.pdf" target="_blank" rel="noopener noreferrer"
                 icon={<Download className="h-4 w-4 sm:h-5 sm:w-5" />}
               >
                 Download my CV
