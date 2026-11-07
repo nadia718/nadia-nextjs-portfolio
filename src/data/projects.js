@@ -8,11 +8,12 @@ const projectdata = [
         size: "square",
     },
     {
-        title: "Booking",
-        image: "/images/projectImage/booking.webp",
-        url: "https://viennadinnertours.com/",
+        title: "MEASKNET SEO Agency",
+        image: "/images/projectImage/measknet.png",
+        url: "https://meask.net/MEASKNET/",
         size: "square",
     },
+    
     {
         title: "Silver Star Rental",
         image: "/images/projectImage/silverstarrental.png",
@@ -35,15 +36,22 @@ const projectdata = [
     // OTHER PROJECTS
 
     {
-        title: "Apex Consultants",
-        image: "/images/projectImage/apex-consultants-project.webp",
-        url: "https://apexicons.com/",
+        title: "Project One",
+        image: "/images/projectImage/project.webp",
+        url: "https://americancarservicenj.com/",
+        size: "square",
+    },
+
+    {
+        title: "Tamizhan Shirts",
+        image: "/images/projectImage/tamizhanshirts.png",
+        url: "https://tamizhanshirts.com/",
         size: "square",
     },
     {
-        title: "Brandsy",
-        image: "/images/projectImage/brandsy.png",
-        url: "https://themes.wpxpro.com/brandsy/",
+        title: "HerMeno Life",
+        image: "/images/projectImage/hermeno.png",
+        url: "https://firebrick-kangaroo-558188.hostingersite.com/",
         size: "square",
     },
     {
@@ -52,12 +60,62 @@ const projectdata = [
         url: "https://americancarservicenj.com/services-areas/",
         size: "square",
     },
+
     {
+        title: "Noor Services Area",
+        image: "/images/projectImage/noorservicesarea.webp",
+        url: "https://noorlimousine.com/service-areas/",
+        size: "square",
+    },
+
+    {
+        title: "Kimberly Stover Law Office",
+        image: "/images/projectImage/kimberly-stover-law.png",
+        url: "https://virginiacriminaldefenseattorneys.net/",
+        size: "square",
+    },
+
+    {
+        title: "Booking",
+        image: "/images/projectImage/booking.webp",
+        url: "https://viennadinnertours.com/",
+        size: "square",
+    },
+
+    {
+        title: "KST Logistics",
+        image: "/images/projectImage/kstlogistics.png",
+        url: "https://kstlogistics.com/",
+        size: "square",
+    },
+
+    {
+        title: "Apex Consultants",
+        image: "/images/projectImage/apex-consultants-project.webp",
+        url: "https://apexicons.com/",
+        size: "square",
+    },
+    {    
         title: "Dave Buster",
         image: "/images/projectImage/DaveBuster.png",
         url: "https://daveandbusters.ph/",
         size: "square",
     },
+
+    {
+        title: "Fast Advance",
+        image: "/images/projectImage/FastAdvance.png",
+        url: "https://fastadvance.net/",
+        size: "square",
+    },
+
+    {
+        title: "Fixology",
+        image: "/images/projectImage/Fixology.png",
+        url: "https://www.fixologyrepair.com/",
+        size: "square",
+    },
+    
     {
         title: "Densoney Consulting",
         image: "/images/projectImage/densonneyconsuling.webp",
@@ -65,65 +123,50 @@ const projectdata = [
         size: "square",
     },
     {
-        title: "Electia",
-        image: "/images/projectImage/electia.png",
-        url: "https://themes.wpxpro.com/eclatia/",
+        title: "Brandsy",
+        image: "/images/projectImage/brandsy.png",
+        url: "https://themes.wpxpro.com/brandsy/",
         size: "square",
     },
+
     {
         title: "Evergreen Capital Partners",
         image: "/images/projectImage/evergreen-capital-partners.webp",
         url: "https://evergreencap.ca/",
         size: "square",
     },
+    
+    
     {
-        title: "Fast Advance",
-        image: "/images/projectImage/FastAdvance.png",
-        url: "https://fastadvance.net/",
+        title: "Electia",
+        image: "/images/projectImage/electia.png",
+        url: "https://themes.wpxpro.com/eclatia/",
         size: "square",
     },
+    
+    
     {
         title: "FINCROFT",
         image: "/images/projectImage/FINCROFT.png",
         url: "https://fincroft.co.uk/",
         size: "square",
     },
-    {
-        title: "Fixology",
-        image: "/images/projectImage/Fixology.png",
-        url: "https://www.fixologyrepair.com/",
-        size: "square",
-    },
+    
     {
         title: "HM IT",
         image: "/images/projectImage/hmit.png",
-        url: "#https://hmitconsulants.com/",
+        url: "https://hmitconsulants.com/",
         size: "square",
     },
-    {
-        title: "KST Logistics",
-        image: "/images/projectImage/kstlogistics.png",
-        url: "https://kstlogistics.com/",
-        size: "square",
-    },
+   
     {
         title: "Lumous",
         image: "/images/projectImage/lumous.png",
         url: "https://themes.wpxpro.com/lumous/",
         size: "square",
     },
-    {
-        title: "Noor Services Area",
-        image: "/images/projectImage/noorservicesarea.webp",
-        url: "https://noorlimousine.com/services-areas/",
-        size: "square",
-    },
-    {
-        title: "Project One",
-        image: "/images/projectImage/project1.webp",
-        url: "https://americancarservicenj.com/",
-        size: "square",
-    },
+    
+    
     {
         title: "Ronke Maye",
         image: "/images/projectImage/RonkeMaye.png",
@@ -148,12 +191,7 @@ const projectdata = [
         url: "https://themes.wpxpro.com/digital/",
         size: "square",
     },
-    {
-        title: "Kimberly Stover Law Office",
-        image: "/images/projectImage/kimberly-stover-law.png",
-        url: "https://virginiacriminaldefenseattorneys.net/",
-        size: "square",
-    },
+    
     {
         title: "E-Tutoring",
         image: "/images/projectImage/e-tutoring.png",
